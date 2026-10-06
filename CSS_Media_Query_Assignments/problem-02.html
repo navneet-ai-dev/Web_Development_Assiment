@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rooms & Suits</title>
+
+<style>
+body{
+  margin:40px;
+  text-align:center;
+  font-family:Georgia;
+}
+
+h1{
+  color:#b78b35;
+}
+
+.rooms{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-top:25px;
+}
+
+.room{
+  padding:10px;
+  margin:5px;
+}
+
+.room img{
+  width:230px;
+  height:150px;
+  object-fit:cover;
+}
+
+.room h3{
+  margin:8px;
+}
+
+.room p{
+  color:#d1a84c;
+  font-size:12px;
+}
+
+@media(max-width:800px){
+  .rooms{
+    flex-wrap:wrap;
+  }
+
+  .room{
+    width:40%;
+  }
+}
+
+@media(max-width:500px){
+  .rooms{
+    display:block;
+  }
+
+  .room{
+    width:90%;
+    margin:auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Rooms & Suits</h1>
+
+<p>
+Far far away, behind the word mountains, far from the countries
+Vokalia and Consonantia, there live the blind texts.
+</p>
+
+<div class="rooms">
+
+<div class="room">
+<img src="https://preview.colorlib.com/theme/sogo/images/img_1.jpg">
+<h3>Single Room</h3>
+<p>$50 / PER NIGHT</p>
+</div>
+
+<div class="room">
+<img src="https://preview.colorlib.com/theme/sogo/images/img_2.jpg">
+<h3>Family Room</h3>
+<p>$70 / PER NIGHT</p>
+</div>
+
+<div class="room">
+<img src="https://preview.colorlib.com/theme/sogo/images/img_3.jpg">
+<h3>Presidential Room</h3>
+<p>$120 / PER NIGHT</p>
+</div>
+
+</div>
+
+</body>
+</html>

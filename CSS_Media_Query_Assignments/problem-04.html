@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grid Area</title>
+
+<style>
+body{
+  margin:30px;
+  font-family:Arial;
+}
+
+.nav{
+  background:yellow;
+  padding:10px;
+  font-size:25px;
+  grid-area:nav;
+}
+
+.left{
+  background:red;
+  padding:100px 10px;
+  grid-area:left;
+}
+
+.r1,.r2,.r3{
+  background:#00ff33;
+  padding:30px 10px;
+}
+
+.r1{grid-area:r1;}
+.r2{grid-area:r2;}
+.r3{grid-area:r3;}
+
+.main{
+  display:grid;
+  gap:10px;
+  grid-template-areas:
+  "nav nav"
+  "left r1"
+  "left r2"
+  "left r3";
+}
+
+@media(max-width:800px){
+  .main{
+    grid-template-areas:
+    "nav nav nav"
+    "left left left"
+    "r1 r2 r3";
+  }
+}
+
+@media(max-width:500px){
+  .main{
+    grid-template-areas:
+    "nav"
+    "left"
+    "r1"
+    "r2"
+    "r3";
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="main">
+
+<div class="nav">Navigation</div>
+
+<div class="left">LEFT BOX</div>
+
+<div class="r1">RIGHT BOX 1</div>
+<div class="r2">RIGHT BOX 2</div>
+<div class="r3">RIGHT BOX 3</div>
+
+</div>
+
+</body>
+</html>

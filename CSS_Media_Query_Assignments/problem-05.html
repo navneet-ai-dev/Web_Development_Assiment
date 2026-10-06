@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Investors</title>
+
+<style>
+body{
+  margin:30px;
+  font-family:Arial;
+  text-align:center;
+}
+
+.investors{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.card{
+  width:180px;
+  padding:15px;
+  margin:10px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  box-shadow:0 2px 6px #ccc;
+}
+
+.card img{
+  width:120px;
+  height:80px;
+  object-fit:contain;
+}
+
+@media(max-width:800px){
+  .card{
+    width:40%;
+  }
+}
+
+@media(max-width:500px){
+  .card{
+    width:90%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Our Investors</h1>
+
+<div class="investors">
+
+<div class="card">
+<img src="investor1.png">
+<h3>Investor 1</h3>
+</div>
+
+<div class="card">
+<img src="investor2.png">
+<h3>Investor 2</h3>
+</div>
+
+<div class="card">
+<img src="investor3.png">
+<h3>Investor 3</h3>
+</div>
+
+<div class="card">
+<img src="investor4.png">
+<h3>Investor 4</h3>
+</div>
+
+<div class="card">
+<img src="investor5.png">
+<h3>Investor 5</h3>
+</div>
+
+</div>
+
+</body>
+</html>

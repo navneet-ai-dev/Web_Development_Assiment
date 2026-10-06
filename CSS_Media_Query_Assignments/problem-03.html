@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Query</title>
+
+<style>
+body{
+  margin:30px;
+  font-family:Arial;
+}
+
+.box{
+  padding:30px;
+  margin:10px;
+  border:1px solid #ddd;
+  background:#eee;
+  text-align:center;
+}
+
+.main{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+@media(max-width:800px){
+  .main{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:500px){
+  .main{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Our Services</h1>
+
+<div class="main">
+  <div class="box">Web Design</div>
+  <div class="box">Development</div>
+  <div class="box">Marketing</div>
+  <div class="box">Photography</div>
+  <div class="box">Branding</div>
+  <div class="box">Support</div>
+</div>
+
+</body>
+</html>
