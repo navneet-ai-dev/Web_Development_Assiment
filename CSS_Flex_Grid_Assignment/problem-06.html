@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+
+<style>
+body{
+  display:flex;
+  justify-content:center;
+  margin-top:50px;
+}
+
+.calculator{
+  width:300px;
+  padding:25px;
+  box-shadow:0 2px 15px #ccc;
+}
+
+.display{
+  height:60px;
+  margin-bottom:15px;
+  box-shadow:inset 0 1px 5px #ddd;
+}
+
+.buttons{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+button{
+  height:60px;
+  font-size:20px;
+  border:0;
+  box-shadow:0 2px 5px #ddd;
+}
+
+.op{
+  background:black;
+  color:white;
+}
+
+.clear{
+  background:red;
+  color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="calculator">
+
+<div class="display"></div>
+
+<div class="buttons">
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button class="op">+</button>
+
+<button>4</button>
+<button>5</button>
+<button>6</button>
+<button class="op">-</button>
+
+<button>7</button>
+<button>8</button>
+<button>9</button>
+<button class="op">×</button>
+
+<button class="clear">C</button>
+<button>0</button>
+<button class="op">=</button>
+<button class="op">/</button>
+</div>
+
+</div>
+
+</body>
+</html>
